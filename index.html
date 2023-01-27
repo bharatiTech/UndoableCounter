@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Undoable Counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./style/styles.css"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <h3>UNDOABLE COUNTER</h3>
+      <div id="operations">
+        <button id="undo">undo</button>
+        <button id="redo" class="disableButton">redo</button>
+      </div>
+      <div id="calculations">
+        <div id="incrementOperations">
+          <button id="minusHundred">-100</button>
+          <button id="minusTen">-10</button>
+          <button id="minusOne">-1</button>
+        </div>
+        <div id="countDisplay">0</div>
+        <div id="decrementOperations">
+          <button id="plusHundred">+100</button>
+          <button id="plusTen">+10</button>
+          <button id="plusOne">+1</button>
+        </div>
+      </div>
+
+      <div class="hideHistory" id="historyContainer">
+        <h4>HISTORY</h4>
+        <div id="history" class="history"></div>
+      </div>
+    </div>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>
